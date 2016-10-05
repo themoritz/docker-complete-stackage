@@ -18,7 +18,7 @@ RUN stack build void xlsior range-set-list ical tostring generics-eot gogol-font
 RUN stack build hsndfile-vector string-qq vector-algorithms vector hreader ansi-terminal pipes-illumina HsOpenSSL-x509-system ltext yjtools tardis gi-gdk json-schema crypto-cipher-types ilist sbv servant-client
 RUN stack build leveldb-haskell primes machines blastxml diff3 errors clock monad-loops hledger-lib bitcoin-types elerea rvar word-trie OpenGLRaw here stylish-haskell base16-bytestring
 RUN stack build threads clumpiness HPDF active path hOpenPGP microlens-mtl digits Spock-api vector-space microformats2-parser profunctor-extras incremental-parser rasterific-svg runmemo permutation options
-RUN apt-get install build-essential libtool
+RUN apt-get install -qqy build-essential libtool
 RUN stack build purescript-bridge read-editor clash-prelude hstatsd amazonka-autoscaling type-fun typelits-witnesses clckwrks-cli patience graylog persistent-postgresql amazonka-sqs quickcheck-io bitcoin-payment-channel generic-aeson time-lens rss-conduit
 RUN stack build gloss hPDB gogol-core tzdata linear emailaddress pandoc-types dns code-builder haskell-lexer adler32 data-lens-light pureMD5 warp pure-io mersenne-random sorted-list
 RUN stack build varying unexceptionalio multiset drawille gi-gtk haskell-gi servant-lucid universe-instances-trans ObjectName persistent-redis log-domain sdl2 feature-flags syb-with-class generic-xmlpickler erf reform-hsp

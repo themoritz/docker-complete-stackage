@@ -18,12 +18,15 @@ RUN stack build void xlsior range-set-list ical tostring generics-eot gogol-font
 RUN stack build hsndfile-vector string-qq vector-algorithms vector hreader ansi-terminal pipes-illumina HsOpenSSL-x509-system ltext yjtools tardis gi-gdk json-schema crypto-cipher-types ilist sbv servant-client
 RUN stack build leveldb-haskell primes machines blastxml diff3 errors clock monad-loops hledger-lib bitcoin-types elerea rvar word-trie OpenGLRaw here stylish-haskell base16-bytestring
 RUN stack build threads clumpiness HPDF active path hOpenPGP microlens-mtl digits Spock-api vector-space microformats2-parser profunctor-extras incremental-parser rasterific-svg runmemo permutation options
+
 RUN apt-get install -qqy build-essential libtool
 RUN stack build purescript-bridge read-editor clash-prelude hstatsd amazonka-autoscaling type-fun typelits-witnesses clckwrks-cli patience graylog persistent-postgresql amazonka-sqs quickcheck-io bitcoin-payment-channel generic-aeson time-lens rss-conduit
 RUN stack build gloss hPDB gogol-core tzdata linear emailaddress pandoc-types dns code-builder haskell-lexer adler32 data-lens-light pureMD5 warp pure-io mersenne-random sorted-list
 RUN stack build varying unexceptionalio multiset drawille gi-gtk haskell-gi servant-lucid universe-instances-trans ObjectName persistent-redis log-domain sdl2 feature-flags syb-with-class generic-xmlpickler erf reform-hsp
 RUN stack build bytedump cassava-megaparsec vector-fftw io-streams-haproxy data-inttrie hlint protobuf-simple prompt gogol-datastore aeson-utils tabular quickcheck-combinators numbers singletons language-thrift IPv6Addr apply-refact
 RUN stack build hxt-css morte bindings-libzip fsnotify-conduit fuzzcheck th-extras exact-pi gogol-people markdown-unlit network-anonymous-i2p simple-reflect system-fileio tasty-quickcheck csv yesod-auth-hashdb base32string amazonka-cognito-idp
+
+RUN stack install gtk2hs-buildtools
 RUN stack build uu-interleaved base-compat gogol-civicinfo x509 wai-middleware-throttle yesod serversession-backend-acid-state ixset fb gogol-dataflow gogol-adexchange-seller control-monad-omega gogol-android-enterprise webkitgtk3-javascriptcore parallel fn amazonka-test
 RUN stack build hspec-golden-aeson timelens pcre-light HUnit hashtables gogol-debugger yesod-auth-oauth2 semigroupoids MFlow monadic-arrays wai-session-postgresql ersatz gogol-games-configuration diagrams-postscript hmatrix crypto-api amazonka-codedeploy
 RUN stack build compactmap wai-middleware-verbs gogol-drive largeword gtk3 amazonka-iot smallcaps force-layout mono-traversable-instances streaming-bytestring concurrency double-conversion hledger-interest asn1-parse digest gogol-apps-tasks yesod-core

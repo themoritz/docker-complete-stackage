@@ -11,6 +11,11 @@ packages = snapshot['packages'].keys()
 print """
 FROM fpco/stack-build:lts-7.2
 
+RUN apt-get update -qq && \\
+    apt-get install -qqy \\
+        build-essentials \\
+        libtool
+
 RUN stack update
 
 RUN mkdir -p /root/.stack/global-project

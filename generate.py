@@ -1,6 +1,10 @@
 import sys
 import yaml
 
+def chunks(l, n):
+    for i in xrange(0, len(l), n):
+        yield l[i:i + n]
+
 snapshot = yaml.load(sys.stdin)
 packages = snapshot['packages'].keys()
 
@@ -19,5 +23,7 @@ resolver: lts-7.2\\n'\\
 
 """
 
-for p in packages:
-    print "RUN stack build {}".format(p)
+chunkSize = 1 + len(packages) / 120
+
+for ps in chunks(packages, chunkSize):
+    print "RUN stack build {}".format(" ".join(ps))
